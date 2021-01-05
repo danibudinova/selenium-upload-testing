@@ -33,7 +33,7 @@ class TestUpload(unittest.TestCase):
         uploaded_file_name = driver.find_element_by_id('uploaded-files').text
         self.assertEqual(uploaded_file_name, self.image_file_name)
 
-        driver.save_screenshot('images/result.png')
+        driver.save_screenshot('artifacts/result.png')
 
         
     def tearDown(self):
